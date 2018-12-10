@@ -20,7 +20,7 @@
 ## 1. MakeTool  
 ### 1.1 Grundlagen  
 Grundlägend muss man, um das MakeTool anwenden und verstehen zu können, wissen wie ein Programm aufgebaut ist und zusammen gebaut wird.
-Wichtig ist, dass im 1.Schritt der Quelltext als ".c"-Datei Gespeichert wird. Danach wird der Quelltext mit dem Compiler kompiliert und zum Schluss mit dem Linker zusamen gebaut. Zur Übersicht und genaueren erklärung siehe das nachfolgende Bild.  
+Wichtig ist, dass im 1.Schritt der Quelltext als ".c"-Datei Gespeichert wird. Danach wird der Quelltext mit dem Compiler kompiliert und zum Schluss mit dem Linker zusamen gebaut. Heraus kommt eine ausführbare Datei mit der Extention ".elf". Zur Übersicht und genaueren erklärung siehe das nachfolgende Bild.  
 ![alt text](https://www.bilder-upload.eu/thumb/c8841e-1538417759.jpg)     
 
 ### 1.2 Funktion
