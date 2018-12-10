@@ -58,7 +58,7 @@ Am Anfang wollten wir eine Programm schreiben welches "Programm Start" ausgeben 
 #include <stdio.h>
 
 int main(){
-        printf("Guten Morgen\n");
+        printf("Programm Start\n");
         return 0;
 }  
 ```
