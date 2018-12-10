@@ -21,7 +21,7 @@
 
 ## 1. MakeTool  
 ---
-Das MakeTool ist ein Tool welches bei der Übersetzung verschiedener Teilprogramm zu einem fertigen ausführbaren Programm hilft.  
+Das MakeTool ist ein Tool welches bei der Übersetzung verschiedener Teilprogramm zu einem fertigen ausführbaren Programm hilft und ist nicht zu einer Programmiersprache gebunden.  
 Das MakeTool weis auch automatisch welche Datei neu kompiliert werden muss, falls es nötig ist. Dies geschiet mit Hilfe von **Zeitstempel** die das System der Datei verleit.
 ### 1.1 Grundlagen  
 ---
