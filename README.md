@@ -87,5 +87,5 @@ Nun kann man das Makefile speichern und danach im Terminal den befehl ```make```
   
 ### 3.Probleme und Lösungen
 ---
-
+**_Variablennamen_:** Sie müssen immer Eindeutig sein, einerseits um einen Quelltext Übersichtlich zu machen und um Fehler zu vermeiden.  **_
 
