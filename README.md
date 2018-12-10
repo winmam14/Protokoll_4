@@ -87,7 +87,9 @@ Nun kann man das Makefile speichern und danach im Terminal den befehl ```make```
   
 ### 3.Probleme und Lösungen
 ---
-**_Variablennamen_:** Sie müssen immer **Eindeutig** sein, einerseits um einen Quelltext Übersichtlich zu machen und um Fehler zu vermeiden.    
+**_Variablennamen_:**  
+Sie müssen immer **Eindeutig** sein, einerseits um einen Quelltext Übersichtlich zu machen und um Fehler zu vermeiden.    
   
-**_Mehrfache definition von Ausdrücken_:** Wenn man den Fehler ausgegeben bekommt, dass ein Ausdruck mehrfach definiert wurde, liegt der Fehler meist in der Headerdatei da dort der ausdruck ```#ifndef``` fehlt!  ```#ifndef``` verhindert dieses Problem. Es beinhaltet alles was zwischen ```#ifndef``` und ```#endif``` steht. Dieser Ausdruck darf **NICHT** vergessen werden.!
+**_Mehrfache definition von Ausdrücken_:**  
+Wenn man den Fehler ausgegeben bekommt, dass ein Ausdruck mehrfach definiert wurde, liegt der Fehler meist in der Headerdatei da dort der ausdruck ```#ifndef``` fehlt!  ```#ifndef``` verhindert dieses Problem. Es beinhaltet alles was zwischen ```#ifndef``` und ```#endif``` steht. Dieser Ausdruck darf **NICHT** vergessen werden.!
 
