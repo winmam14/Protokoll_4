@@ -13,6 +13,7 @@
 #### 1. MakeTool
 ##### 1.1 Grundlagen
 ##### 1.2 Makefile
+##### 1.3 Befehle des Maketools
 #### 3. Übung
 #### 4. Probleme und Lösungen
 
@@ -36,13 +37,47 @@ Ziel x: Abhängigkeiten             |             main.o: main.c monitor.h lcd.h
 *tabulator* Befehl 3               |
                                    |
 Ziel y: Abhängigkeiten             |             clean: 
-*tabulator* Befehl 3               |                   rm *.o
-*tabulator* Befehl 3               |                   rm *.elf
+*tabulator* Befehl 1               |                   -rm *.o
+*tabulator* Befehl 2               |                   -rm *.elf
 *tabulator* Befehl 3               |
 ``` 
+```-rm``` wird beim "Clean" verwendet um Sicher zu stellen, dass auch bei einem Fehler des Programmes der Anfangszustand hergestellt werden kann.
+### 1.3 Befehle Des MakeTools
+```make``` -> führt das MakeTool aus  
+```make clean``` -> kann verwendet werden wenn "clean" im Makefile steht  
+```./(Name der Datei).elf /.exe``` -> nicht nur für das MakeTool, jedoch bei der verwendung sehr Hilfreich  
 
 ### 2.Übung  
+Am Anfang wollten wir eine Programm schreiben welches "Programm Start" ausgeben soll! Dafür musstn wir einen Quelltext schreiben!
+```ruby
+#include <stdio.h>
 
+int main(){
+        printf("Guten Morgen\n");
+        return 0;
+}  
+```
+Um mit dem MakeTool aus dem Quelltext ein ausführbares Programm zu erzeugen, mussten wir als nächstes ein Makefile erzeugen!
+```
+ue04.elf: main.o monitor.o lcd.o
+        gcc -o ue04.elf main.o monitor.o lcd.o  
+
+main.o: main.c monitor.h lcd.h
+        gcc -c main.c
+        
+        
+monitor.o: monitor.c lcd.h
+        gcc -c monitor.c
+        
+lcd.o: lcd.c
+        gcc -c lcd.c
+        
+clean: 
+        rm *.o
+        rm *.elf
+```
+
+Nun kann man das Makefile speichern und danach im Terminal den befehl ```make``` eingeben. Das MakeTool wird aufgerufen und sucht sich anhand des Makefiles die einzelnen Dateien die es braucht um alle Anforderungen des Makefiles zu erfüllen. Falls nur eine Datei verändert wird, so wird nur diese eine Datei neu Kompiliert. Das macht das MakeTool mit Hilfe des Zeitstempels, welchen das System der Datei anhängt.
 ### 3.Probleme und Lösungen
 Zeitstempel
 
