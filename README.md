@@ -54,7 +54,7 @@ Ziel y: Abhängigkeiten             |             clean:
 ### 2.Übung  
 ---
 Am Anfang wollten wir eine Programm schreiben welches "Programm Start" ausgeben soll! Dafür musstn wir einen Quelltext schreiben!
-```ruby
+```c
 #include <stdio.h>
 
 int main(){
@@ -63,7 +63,7 @@ int main(){
 }  
 ```
 Um mit dem **MakeTool** aus dem Quelltext ein ausführbares Programm zu erzeugen, mussten wir als nächstes ein **Makefile** erzeugen!
-```ruby
+```c
 ue04.elf: main.o monitor.o lcd.o
         gcc -o ue04.elf main.o monitor.o lcd.o  
 
